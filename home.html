@@ -4,29 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="CSS\home.css">
     <script src="JS\script.js"></script>
 </head>
 <body>
-    <h1>Castle Bank</h1>
+    <header>
+        <div class="header-content">
+            <img src="Source\Castle Bank.png" alt="CastleBank Logo" class="logo">
+            <h1>CastleBank</h1>
+        </div>
+    </header>
 
-    <!-- INPUT USUARIO -->
-    <input type="text" id="usuario" placeholder="Ingrese su usuario">
-    <br>
-    <!-- BOTONES -->
-    <button onclick="consultarSaldo()">Consultar Saldo</button>
-    <button onclick="crearUsuario()">Crear Usuario</button>
-    <button onclick="mostrarIngresarSaldo()">Ingresar Saldo</button>
-    <button onclick="mostrarRetirarSaldo()">Retirar Saldo</button>
-    <!-- INPUTS MONTO -->
-    <div id="IngresarSaldo" style="display:none;">
-        <input type="number" id="montoI" placeholder="Ingrese el monto">
-        <button onclick="IngresarSaldo(this.textContent)">Confirmar</button>
-    </div>
-    <div id="RetirarSaldo" style="display:none;">
-        <input type="number" id="montoR" placeholder="Ingrese el monto">
-        <button onclick="RetirarSaldo(this.textContent)">Confirmar</button>
-    </div>
+    <div class="container">
 
-    <div id="resultado"></div>
+
+        <h1>Mantenimiento de Usuario</h1>
+
+        <!-- INPUT USUARIO -->
+        <div class="input-group">
+            <input type="text" id="usuario" placeholder="Ingrese su usuario">
+        </div>
+        <br>
+        <!-- BOTONES -->
+        <div class="button-group">
+            <button onclick="consultarSaldo()">Consultar Saldo</button>
+            <button onclick="crearUsuario()">Crear Usuario</button>
+            <button onclick="mostrarIngresarSaldo()">Ingresar Saldo</button>
+            <button onclick="mostrarRetirarSaldo()">Retirar Saldo</button>
+        </div>
+
+        <!-- INPUTS MONTO -->
+        <div id="IngresarSaldo">
+            <input type="number" id="montoI" placeholder="Ingrese el monto">
+            <button onclick="IngresarSaldo(this.textContent)">Confirmar</button>
+            
+        </div>
+    
+        <div id="RetirarSaldo">
+            <input type="number" id="montoR" placeholder="Ingrese el monto">
+            <button onclick="RetirarSaldo(this.textContent)">Confirmar</button>
+        </div>
+    
+        <div id="resultado"></div>
+    
+    </div>
+    
 </body>
 </html>

@@ -57,6 +57,7 @@ function crearUsuario() {
 // FUNCION PARA INGRESAR SALDO
 function mostrarIngresarSaldo() {
     document.getElementById('IngresarSaldo').style.display = 'block';
+    document.getElementById('RetirarSaldo').style.display = 'none';
     document.getElementById('IngresarSaldo').querySelector('button').textContent = 'Ingresar';
 }
 
@@ -89,6 +90,7 @@ function IngresarSaldo() {
 }
 // FUNCION PARA RETIRAR SALDO
 function mostrarRetirarSaldo() {
+    document.getElementById('IngresarSaldo').style.display = 'none';
     document.getElementById('RetirarSaldo').style.display = 'block';
     document.getElementById('RetirarSaldo').querySelector('button').textContent = 'Retirar';
 }

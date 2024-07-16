@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #0E2442;
+    --secondary-color: #1A3A6E;
+    --accent-color: #4A90E2;
+    --text-color: #FFFFFF;
+    --background-color: #F0F4F8;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;  /* Ajusta esto según el tamaño de tu logo */
+    height: auto;
+    margin-right: 15px;
+}
+
+header h1 {
+    color: var(--text-color);
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    padding-top: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    min-width: 150px;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+#IngresarSaldo,
+#RetirarSaldo {
+    display: none;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#IngresarSaldo input,
+#RetirarSaldo input {
+    width: calc(100% - 22px); /* Ajusta el ancho considerando el padding y el borde */
+    margin-bottom: 10px;
+}
+
+#IngresarSaldo button,
+#RetirarSaldo button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
+
