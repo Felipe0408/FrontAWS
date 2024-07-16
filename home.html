@@ -6,6 +6,26 @@
     <title>Home</title>
 </head>
 <body>
-    
+    <h1>Castle Bank</h1>
+
+    <!-- INPUT USUARIO -->
+    <input type="text" id="usuario" placeholder="Ingrese su usuario">
+    <br>
+    <!-- BOTONES -->
+    <button onclick="consultarSaldo()">Consultar Saldo</button>
+    <button onclick="crearUsuario()">Crear Usuario</button>
+    <button onclick="mostrarIngresarSaldo()">Ingresar Saldo</button>
+    <button onclick="mostrarRetirarSaldo()">Retirar Saldo</button>
+    <!-- INPUTS MONTO -->
+    <div id="IngresarSaldo" style="display:none;">
+        <input type="number" id="montoI" placeholder="Ingrese el monto">
+        <button onclick="IngresarSaldo(this.textContent)">Confirmar</button>
+    </div>
+    <div id="RetirarSaldo" style="display:none;">
+        <input type="number" id="montoR" placeholder="Ingrese el monto">
+        <button onclick="RetirarSaldo(this.textContent)">Confirmar</button>
+    </div>
+
+    <div id="resultado"></div>
 </body>
 </html>
