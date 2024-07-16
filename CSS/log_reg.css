@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    background-color: #0E2442;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: max-content;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+}
+
+.button:hover {
+    background-color: #9b6a09;
+}
+
+a {
+    color: #9b6a09;
+    text-decoration: none;
+    
+}

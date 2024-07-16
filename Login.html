@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Castle Bank - Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS\log_reg.css">
 </head>
 <body>
-    <div class="container">
+    <div class="form">
         <h2>Iniciar sesión</h2>
         <form id="loginForm">
-            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="text" id="username" placeholder="Nombre de usuario" required>
             <input type="password" id="password" placeholder="Contraseña" required>
             <button type="submit" class="button">Iniciar sesión</button>
         </form>
-        <p>¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a></p>
+        <p>¿No tienes una cuenta? <b><a href="register.html">Regístrate aquí</a></b></p>
     </div>
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
     <script src="https://amazon-cognito-identity-js.min.js"></script>
-    <script src="cognito.js"></script>
-    <script src="login.js"></script>
+    <script src="JS\cognito.js"></script>
+    <script src="JS\login.js"></script>
 </body>
 </html>

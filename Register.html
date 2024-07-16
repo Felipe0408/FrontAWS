@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Banco - Registro</title>
+    <link rel="stylesheet" href="CSS\log_reg.css">
+</head>
+<body>
+    <div class="form">
+        <h2>Registrarse</h2>
+        <form id="registerForm">
+            <input type="text" id="username" placeholder="Nombre de usuario" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <input type="password" id="confirmPassword" placeholder="Confirmar contraseña" required>
+            <button type="submit" class="button">Registrarse</button>
+        </form>
+        <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.1386.0/aws-sdk.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/amazon-cognito-identity-js/6.3.1/amazon-cognito-identity.min.js"></script>
+    <script src="JS\cognito.js"></script>
+    <script src="JS\register.js"></script>
+</body>
+</html>
