@@ -1,7 +1,8 @@
+AWS.config.region = 'us-west-2';
+
 const poolData = {
     UserPoolId: 'us-west-2_RhboYT6sp',
-    UserPoolClientId: '5gl3l1qnneeb1bng72g63c53is',
-    region: 'us-west-2'
+    ClientId: '5gl3l1qnneeb1bng72g63c53is',
 };
 
 const userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
