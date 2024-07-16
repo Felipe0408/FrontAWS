@@ -1,3 +1,8 @@
+if (typeof AmazonCognitoIdentity === 'undefined') {
+    console.error('AmazonCognitoIdentity no está definido. Asegúrate de que el script se ha cargado correctamente.');
+    return;
+}
+
 AWS.config.region = 'us-west-2';
 
 const poolData = {
