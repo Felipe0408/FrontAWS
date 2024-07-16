@@ -74,7 +74,8 @@ function IngresarSaldo() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
             Usuario: usuario,
-            Monto: monto
+            Monto: monto,
+            Proceso: "Ingresar Saldo"
         })
     })
     .then(response => response.json())
@@ -108,7 +109,8 @@ function RetirarSaldo() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
             Usuario: usuario,
-            Monto: monto
+            Monto: monto,
+            Proceso: "Retirar Saldo"
         })
     })
     .then(response => response.json())
