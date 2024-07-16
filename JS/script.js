@@ -68,7 +68,7 @@ function IngresarSaldo() {
         return;
     }
 
-    fetch(API_URL, {
+    fetch('https://5zwtbhmnqh.execute-api.us-west-2.amazonaws.com/Dev/Ingresar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -101,7 +101,7 @@ function RetirarSaldo() {
         return;
     }
 
-    fetch(API_URL, {
+    fetch('https://5zwtbhmnqh.execute-api.us-west-2.amazonaws.com/Dev/Retirar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
